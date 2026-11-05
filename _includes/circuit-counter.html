@@ -1,0 +1,16 @@
+<section class="circuit-easter-egg" aria-label="Hidden 7-segment counter easter egg" data-counter="0">
+  <div class="circuit-easter-egg__title"><span>U7 // COUNTER</span><span class="circuit-easter-egg__led" aria-label="Status LED"></span></div>
+  <div class="circuit-easter-egg__board">
+    <div class="seven-seg" aria-hidden="true">
+      <i class="seg seg-a"></i><i class="seg seg-b"></i><i class="seg seg-c"></i><i class="seg seg-d"></i><i class="seg seg-e"></i><i class="seg seg-f"></i><i class="seg seg-g"></i>
+    </div>
+    <span class="circuit-easter-egg__readout" aria-live="polite">COUNT: 0</span>
+  </div>
+  <div class="circuit-easter-egg__buttons">
+    <button type="button" data-count-down aria-label="Count down">CNT_DOWN −</button>
+    <button type="button" data-count-up aria-label="Count up">CNT_UP +</button>
+  </div>
+  <div class="circuit-easter-egg__status" aria-live="polite">LED: READY · RANGE 0–7</div>
+  <span class="circuit-easter-egg__rocket" aria-hidden="true">🚀</span>
+</section>
+<script src="{{ '/js/circuit-counter.js' | relative_url }}" defer></script>

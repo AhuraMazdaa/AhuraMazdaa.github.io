@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-<link href="/css/override.css" rel="stylesheet" type="text/css">
+<link href="{{ '/css/override.css' | relative_url }}" rel="stylesheet" type="text/css">
 <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
@@ -25,6 +25,7 @@ layout: default
     {{ content }}
     {% include navlinks.html %}
   </div>
+  {% include circuit-counter.html %}
 
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
 </article>
